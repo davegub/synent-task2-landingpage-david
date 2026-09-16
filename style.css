@@ -116,7 +116,22 @@ button {
     height: 2px;
     margin: 5px 0;
     background: #162b5b;
-    transition: 0.2s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+
+/* Hamburger → X animation */
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 .mobile-nav-button {

@@ -5,6 +5,8 @@ const navLinks = navMenu.querySelectorAll("a");
 menuToggle.addEventListener("click", () => {
     const isOpen = navMenu.classList.toggle("active");
 
+    menuToggle.classList.toggle("active", isOpen);
+
     menuToggle.setAttribute("aria-expanded", isOpen);
 
     menuToggle.setAttribute(
@@ -16,6 +18,7 @@ menuToggle.addEventListener("click", () => {
 navLinks.forEach((link) => {
     link.addEventListener("click", () => {
         navMenu.classList.remove("active");
+        menuToggle.classList.remove("active");
 
         menuToggle.setAttribute("aria-expanded", "false");
 
