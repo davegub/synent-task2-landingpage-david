@@ -10,19 +10,33 @@
 <body>
 
     <!-- Header -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="#" class="logo">LeadFlow</a>
+<header class="header">
+    <div class="container nav-container">
 
-            <nav class="nav">
-                <a href="#features">Features</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#contact">Contact</a>
-            </nav>
+        <a href="#" class="logo">LeadFlow</a>
 
-            <a href="#contact" class="nav-button">Get Started</a>
-        </div>
-    </header>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav" id="nav-menu">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#contact">Contact</a>
+
+            <a href="#contact" class="nav-button mobile-nav-button">
+                Get Started
+            </a>
+        </nav>
+
+        <a href="#contact" class="nav-button desktop-nav-button">
+            Get Started
+        </a>
+
+    </div>
+</header>
 
 
     <!-- Hero Section -->
