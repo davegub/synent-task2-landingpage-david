@@ -647,3 +647,12 @@ button {
         flex-direction: column;
     }
 }
+
+/* Accessibility */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #2f6fed;
+    outline-offset: 3px;
+    border-radius: 4px;
+}

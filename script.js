@@ -21,10 +21,19 @@ navLinks.forEach((link) => {
         menuToggle.classList.remove("active");
 
         menuToggle.setAttribute("aria-expanded", "false");
-
-        menuToggle.setAttribute(
-            "aria-label",
-            "Open navigation menu"
-        );
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
     });
+});
+
+// Close the mobile menu when pressing Escape
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && navMenu.classList.contains("active")) {
+        navMenu.classList.remove("active");
+        menuToggle.classList.remove("active");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+        menuToggle.focus();
+    }
 });
